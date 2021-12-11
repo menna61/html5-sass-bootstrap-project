@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.h2, .get-in h2, .service h2, .need h2, .home .home-content h2 {
+  font-size: 48px;
+}
+
+.span, .get-in span, .service span, .need span, .home .home-content span {
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #f05f40;
+  margin: 1rem auto;
+}
+
+.p, .need p, .home .home-content p {
+  margin: 2rem 0;
+  color: #1f1a1a;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.button, .download button, .images .row div .overlay button, .need button, .home .home-content button {
+  background-color: #f05f40;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
+.button:hover, .download button:hover, .images .row div .overlay button:hover, .need button:hover, .home .home-content button:hover {
+  background-color: #fff;
+  color: #f05f40;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
+header .container-fluid {
+  padding: 0 !important;
+}
+header .navbar {
+  background-color: rgba(240, 95, 64, 0.5);
+}
+header h2 {
+  color: #fff;
+  padding: 10px 0;
+}
+
+ul li {
+  padding: 10px 15px;
+}
+ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+}
+ul li a:hover {
+  color: #f05f40;
+  text-decoration: none;
+}
+
+.home {
+  background-image: url("../images/bg2.jpeg");
+  height: 100vh;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.need {
+  padding: 4rem 0;
+  text-align: center;
+  background-color: #f05f40;
+}
+.need h2 {
+  color: #fff;
+  font-size: 35px;
+}
+.need p {
+  color: #fff;
+}
+.need span {
+  background-color: #fff;
+}
+.need button {
+  background-color: #fff;
+  color: #1f1a1a;
+}
+.need button:hover {
+  background-color: #1f1a1a;
+  color: #fff;
+}
+
+.service {
+  padding: 4rem 0;
+  text-align: center;
+}
+.service h2 {
+  font-size: 35px;
+}
+.service .item {
+  margin-top: 50px;
+}
+.service .item h3 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.service .item i {
+  color: #f05f40;
+}
+
+.images .row {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.images .row div {
+  padding: 0 !important;
+  margin: 0 !important;
+  position: relative;
+}
+.images .row div img {
+  width: 100%;
+}
+.images .row div .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(240, 95, 64, 0.6);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.images .row div:hover .overlay {
+  opacity: 1;
+}
+
+.download {
+  background-color: #1f1a1a;
+  padding: 5rem 0;
+  color: #fff;
+  text-align: center;
+}
+.download button {
+  background-color: #fff;
+  color: #000;
+}
+
+.get-in {
+  padding: 6rem 0;
+  text-align: center;
+}
+.get-in h2 {
+  font-size: 40px;
+}
+.get-in p {
+  padding-bottom: 3rem;
+}
+.get-in i {
+  margin-bottom: 1rem;
+}
+.get-in .col-6 a {
+  color: #f05f40;
+  transition: all 0.5s ease-in-out;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$primaryColor : #f05f40;
+$secondColor : rgb(31, 26, 26);
+$backg : url("../images/bg2.jpeg");
+@mixin tran {
+    transition: all 0.5s ease-in-out;
+}
+.h2{
+    font-size: 48px;
+}
+.span{
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: $primaryColor;
+    margin: 1rem auto;
+}
+.p{
+    margin: 2rem 0; //1*16
+    color: $secondColor;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+.button{
+    background-color:$primaryColor ;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    @include tran;
+    &:hover{
+        background-color: #fff;
+        color: $primaryColor;
+    }
+}
+.container{
+    width: 85%;
+    margin: auto;
+}
+header{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 999;
+        .container-fluid{
+            padding : 0 !important;
+        }
+        .navbar{
+            background-color: rgba($color: $primaryColor, $alpha: 0.5);
+        }        
+        h2{
+            color: #fff;
+            padding: 10px 0 ;
+        }
+    }
+    ul{  
+        li{
+            padding: 10px 15px;
+            a{
+                color: #fff;
+                text-decoration: none;
+                font-weight: bold;
+                text-transform: uppercase;
+                @include tran;
+                &:hover{
+                    color: $primaryColor;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+.home{
+    background-image: $backg;
+    height: 100vh;
+    background-size: cover;
+    text-align: center;
+    // position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    .home-content{
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%,-50%);
+        h2{
+            @extend .h2;
+        }
+        span{
+            @extend .span;
+        }
+        p{
+            @extend .p;
+
+        }
+        button{
+            @extend .button;
+        }
+    }
+    
+}
+.need{
+    padding: 4rem 0;
+    text-align: center;
+    background-color: $primaryColor;
+    h2{
+        @extend .h2;
+        color: #fff;
+        font-size: 35px;
+    }
+    p{
+        @extend .p;
+        color: #fff;
+    }
+    span{
+        @extend .span;
+        background-color: #fff;
+    }
+    button{
+        @extend .button;
+        background-color: #fff;
+        color: $secondColor;
+        &:hover{
+            background-color: $secondColor;
+            color: #fff;
+        }
+    }
+}
+.service{
+    padding: 4rem 0;
+    text-align: center;
+    h2{
+        @extend .h2;
+        font-size: 35px;
+        
+    }
+    span{
+        @extend .span;
+        
+    }
+    .item{
+        // width: 25%;
+        // float: left;
+        margin-top: 50px;
+        h3{
+            margin-top:30px;
+            margin-bottom: 20px;
+        }
+        i{
+            color:$primaryColor;
+        }
+        
+    }
+}
+.images{
+    .row{
+        padding: 0 !important;
+        margin: 0 !important;  
+        div{
+            padding: 0 !important;
+            margin: 0 !important;
+            position: relative;
+            img{
+                width: 100%;
+                
+            }
+            .overlay{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background-color:rgba($primaryColor,0.6);
+                opacity: 0;
+                @include tran;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                button{
+                @extend .button;
+                }
+            }
+            &:hover{
+                .overlay{
+                        opacity: 1;
+                    
+                }
+            }
+        }
+    }
+}
+.download{
+    background-color: $secondColor;
+    padding: 5rem 0;
+    color: #fff;
+    text-align: center;
+    button{
+        @extend .button;
+        background-color: #fff;
+        color: #000;
+    }
+}
+.get-in{
+    padding: 6rem 0;
+    text-align: center;
+    h2{
+        @extend .h2;
+        font-size: 40px;
+    }
+    span{
+        @extend .span;
+    }
+    p{
+        padding-bottom: 3rem;
+    }
+    i{
+        margin-bottom: 1rem;
+    }
+    
+    .col-6 a{
+      color : $primaryColor;  
+      @include tran;
+      text-decoration: none;
+    }
+}
+
